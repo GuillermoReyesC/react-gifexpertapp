@@ -10,10 +10,14 @@ export const AddCategory = ( { setCategories } ) => {
 
     const handleInputChange = ( e ) => {
         setInputValue(e.target.value)
+
+        console.log('handleInputChange llamado')
     }
 
     const handlesubmit = ( e ) => {
         e.preventDefault()
+
+       // console.log('handlesubmit', inputValue )
 
         // console.log('submit done')
         if (inputValue.trim().length > 2 ) {
@@ -29,10 +33,12 @@ export const AddCategory = ( { setCategories } ) => {
     return (
          
            <form onSubmit={ handlesubmit }>
+               <p>{ inputValue }</p>
            <input
                 type="text"
                 value={ inputValue }
                 onChange={ handleInputChange }
+                placeholder="buscar gifs"
             />   
                
             </form> 

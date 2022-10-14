@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGridItem/ > Debe de mostrarse el componente correctamente 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="titulo"
+    src="http://localhost/algo.jpg"
+  />
+  <p>
+     
+    titulo
+  </p>
+</div>
+`;
+
+exports[`Pruebas en <GifGridItem/ > debe de mostrar data enviada por propTypes  1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="titulo"
+    src="http://localhost/algo.jpg"
+  />
+  <p>
+     
+    titulo
+  </p>
+</div>
+`;

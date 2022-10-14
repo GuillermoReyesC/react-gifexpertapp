@@ -3,10 +3,15 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 
-const GifExpertApp = () => {
+export const GifExpertApp = ( { defaultCategories = [] } ) => {
 
-    const [ categories, setCategories ] = useState(['rick y morty']);
+    
 
+    
+    const [ categories, setCategories ] = useState( defaultCategories );
+
+    //const [ categories, setCategories ] = useState(['One Punch']);
+    
 /*    // const categories = ['x', 'x2', 'x3', 'z']
 
   
@@ -28,7 +33,7 @@ const GifExpertApp = () => {
             
 
            
-            <ol>
+            
                 { 
                 categories.map( category => (
                     <GifGrid 
@@ -37,7 +42,7 @@ const GifExpertApp = () => {
                     />
                 ))
                 }
-            </ol>
+            
 
         </>
     )
